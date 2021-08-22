@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 
 //实验目的：验证线程的优先级的作用，通过不停的让步，来检测，优先级高的线程被CPU调度起来的频率是不是比优先级低的线程更多
+//实验结果：优先级为1的线程和优先级为10的线程，jobCount的数量差不多。这证明--程序的正确性不能依赖于线程的优先级高低
 public class Priority {
 
     private static volatile boolean notStart = true;
